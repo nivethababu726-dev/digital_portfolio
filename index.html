@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 2px 0;
+    text-align: center;
+}
+
+header .profile-thumb {
+    background: url(H1.jpeg);
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+header h1 {
+    margin: 10px 0 0;
+}
+
+header h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+#about {
+    padding: 40px 0;
+}
+
+#about .info {
+    list-style: none;
+    padding: 0;
+}
+
+#about .info li {
+    margin-bottom: 10px;
+}
+
+#about .info li span {
+    font-weight: bold;
+}
+
+#resume {
+    padding: 40px 0;
+}
+
+button a{
+    font-size: large;
+    font-weight:600;
+    color: #000;
+    text-decoration: none;
+}
+
+button{
+    border-radius: 10px;
+    padding: 5px;
+}
+#resume .timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+#resume .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #333;
+    left: 50%;
+    margin-left: -1px;
+}
+
+#resume .timeline li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#resume .timeline .timeline-badge {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+}
+
+#resume .timeline .timeline-panel {
+    width: 45%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+
+#resume .timeline .timeline-panel h3 {
+    margin-top: 0;
+}
+
+#resume .timeline .timeline-panel span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: disc;
+    margin: 0;
+    padding-left: 1.5em;
+}
+
+ul li {
+    margin: 0.5em 0;
+    animation: slideInRight 1s ease-in-out;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+/* Animation for elements on scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Progress bar animations */
+.progress-bar {
+    height: 20px;
+    background-color: #4CAF50;
+    width: 0;
+    transition: width 2s ease-in-out;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile-thumb"></div>
+            <h1>Thenmozhi</h1>
+            <h3>Student</h3>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="info">
+                        <li><span>Full Name:</span>Thenmozhi</li>
+                        <li><span>Phone:</span>+ 7338970031</li>
+                        <li><span>Email:</span>td3464186@gmail.com</li>
+                        <li><span>Address:</span>kumaravadi</li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <h2>profile</h2>
+                    <p>There live the blind texts far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in bookmarksgrove there live the blind texts far from the countries.</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="container">
+            <button class=" btn btn-primary"><a href="resume.jpg">My Resume</a></button>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-badge"><i class="icon-suitcase"></i></div>
+                            <div class="timeline-panel">
+                                <h3>Courses</h3>               
+                                <ul>
+                                    <li>Html</li>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>C++</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge"><i class="icon-suitcase"></i></div>
+                            <div class="timeline-panel">
+                                <h3>Skills</h3>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>C++</li>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
